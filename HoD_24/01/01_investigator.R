@@ -31,4 +31,5 @@ customers_fin <- customers |>
   )
 
 customers_fin |>
-  filter(unformated_phone_num == name_to_num)
+  filter(unformated_phone_num == name_to_num) |>
+  pull(phone)
