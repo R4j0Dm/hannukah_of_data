@@ -59,7 +59,7 @@ customers_data <- customers |>
   )
 
 # Find the specific customer with the initial JP
-customers_data |>
+contractor_phone_number <- customers_data |>
   filter(
     str_detect(first_name, pattern = "^J") &
     str_detect(last_name, "^P")) |>
